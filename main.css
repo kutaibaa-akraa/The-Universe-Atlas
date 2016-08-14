@@ -24,7 +24,7 @@ td,th {vertical-align: middle}
 .left {text-align: left}
 .right {text-align: right}
 .center {text-align: center}
-.center table {margin-left: auto; margin-right: auto; text-align: left}
+.center table {margin-left: auto; margin-right: auto; text-align: right}
 .center th {text-align: center}
 .floatleft {float: left; margin: 3%}
 .floatright {float: right; margin: 3%}
