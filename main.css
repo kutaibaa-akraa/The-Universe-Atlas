@@ -12,9 +12,9 @@ a:focus,a:hover {color: #cc33cc}
 a:active {color: #ff99ff}
 h1,h2,h3 {font-family: "Century Gothic", Monaco, Avantgarde, "URW Gothic L", sans-serif; font-weight: normal; text-align: center; color: #ffffee}
 h1,h2,h3 {border: 1px solid #6666cc; margin-left: 4%; margin-right: 4%; background-color: #000a3f}
-h1 {font-size:200%}
-h2 {font-size:170%}
-h3 {font-size:125%}
+h1 {font-size:180%}
+h2 {font-size:150%}
+h3 {font-size:117%}
 hr {color: #3366cc; background-color: #3366cc; border: none; height: 2px}
 ul {list-style-image: url("icons2/star.gif"/*tpa=http://www.atlasoftheuniverse.com/icons2/star.gif*/)}
 p {margin-left: 3%; margin-right: 2%}
@@ -56,9 +56,9 @@ table.toptable img{border: 0}
 div.subtable {padding: 4px; border: none; background-color: #006600; margin-right: 5%; margin-left: 5%}
 table.subtable {width: 100%}
 table.subtable th{background-color: #001200; border: 1px solid #00cc66}
-table.subtable td{background-color: #000000; border: 1px solid #00cc66; color:#ccddff; text-align:right}
+table.subtable td{background-color: #000000; border: 1px solid #00cc66; color:#ccddff}
 table.subtable img{border: 0}
-ul.short {margin-right: 15%; margin-left: 15%; text-align: right; font-size: small}
+ul.short {margin-right: 15%; margin-left: 15%; text-align: left; font-size: small}
 div.quote {font-style: italic; font-size: small; color:#6666ff; text-align: center}
 
 /* Styles for the nine main map pages */
