@@ -65,7 +65,7 @@ div.quote {font-style: italic; font-size: small; color:#6666ff; text-align: cent
 table.map {border: 2px dotted #444466; border-collapse: collapse}
 table.map td{border: 1px solid #363948; background-color: #000000; text-align: center}
 table.starbox {border: 1px solid #444466; background-color: #000000; margin-top: 1em; margin-bottom: 1em}
-table.starbox td{padding: 0; text-align: left}
+table.starbox td{padding: 0; text-align: right}
 table.starbox span{border-bottom: 1px dashed #bbbbbb; cursor: help}
 div.captionbox {border: 2px solid #006633; background-color: #000000; margin-right: 3%; margin-left: 3%; padding: 0.5em; color: #ccddff}
 div.captionbox {border-radius: 20px; -moz-border-radius: 20px}
