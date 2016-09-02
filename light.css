@@ -1,0 +1,106 @@
+/* An Atlas of the Universe - my 'light' style sheet! */
+
+body {background-color: #ffffff; background-image: url("wstars.gif"/*tpa=http://www.atlasoftheuniverse.com/wstars.gif*/)}
+body,div,p,td,th,dl,ul {font-family: Arial, Helvetica, sans-serif; color: #000033}
+pre {font-family: monospace; color: #000033}
+pre span {font-family: monospace}
+pre a {font-family: monospace}
+a {font-family: Arial, Helvetica, sans-serif; text-decoration: underline}
+a:link {color: #0000ff}
+a:visited {color: #ff0000}
+a:focus,a:hover {color: #cc00ff}
+a:active {color: #ff55ff}
+h1,h2,h3 {font-family: "Century Gothic", Monaco, Avantgarde, "URW Gothic L", sans-serif; font-weight: normal; text-align: center; color: #000066}
+h1,h2,h3 {border: 1px solid #9999ff; margin-left: 4%; margin-right: 4%; background-color: #eeeeff}
+h1 {font-size:180%}
+h2 {font-size:150%}
+h3 {font-size:117%}
+hr {color: #6699ff; background-color: #6699ff; border: none; height: 2px}
+ul {list-style-image: url("icons2/star.gif"/*tpa=http://www.atlasoftheuniverse.com/icons2/star.gif*/)}
+p {margin-left: 3%; margin-right: 2%}
+dl {margin-left: 2%; margin-right: 3%}
+td,th {vertical-align: middle}
+
+.left {text-align: left}
+.right {text-align: right}
+.center {text-align: center}
+.center table {margin-left: auto; margin-right: auto; text-align: left}
+.center th {text-align: center}
+.floatleft {float: left; margin: 3%}
+.floatright {float: right; margin: 3%}
+.spacer {clear: both}
+.toppy {margin-top: 1em} 
+.bottomy {margin-bottom: 1em}
+hr.base {color: #0000ff; background-color: #0000ff; border: none; height: 2px; margin: 0.2em}
+div.base {border: 1px solid #9ad; background-color: #eeeeff; padding: 0.4em; margin: 1em 0.2em 0.5em 0.2em}
+div.caption {margin-right: 10%; margin-left: 10%; text-align: justify; margin-bottom: 1em}
+div.textbox {background-color: #eeeeff; border: 1px solid #6666ff; padding: 0.5em}
+div.smalltextbox {background-color: #eeeeff; border: 2px solid #6666ff; margin-right: 5%; margin-left: 5%; padding: 0.5em}
+table.listbox {background-color: #eeeeff; border: 1px solid #6666ff}
+table.databox {border: 2px solid #6666ff; border-collapse: collapse}
+table.databox th, table.databox td{border: 1px solid #6666ff; background-color: #eeeeff}
+div.iframe {overflow: scroll; width: 90%; height: 16em; background-color: #eeeeff; border: 2px solid #666666; margin-left: 5%}
+
+/* Styles for the Index page */
+div.flagbox {border: none; background-color: #ccccee; margin-left: 15%; margin-right: 15%}
+table.flagbox {width: 100%; font-size: small; text-align: center}
+table.flagbox img{border: 1px solid}
+table.flagbox a{text-decoration: none}
+h1.header {margin: 0; border: 0; background-color: transparent}
+div.toptable { padding: 5px; border: none; background-color: #66bbff; margin-right: 8%; margin-left: 8%}
+table.toptable {width: 100% }
+table.toptable th{background-color: #ddddff; border: 1px solid #004499}
+table.toptable td{background-color: #eeeeff; border: 1px solid #004499; color:#003399}
+table.toptable div{text-align: center; color:#000000}
+table.toptable img{border: 0}
+div.subtable {padding: 4px; border: none; background-color: #66cc66; margin-right: 5%; margin-left: 5%}
+table.subtable {width: 100% }
+table.subtable th{background-color: #ddffdd; border: 1px solid #009900}
+table.subtable td{background-color: #eeffee; border: 1px solid #009900; color:#003399}
+table.subtable img{border: 0}
+ul.short {margin-right: 15%; margin-left: 15%; text-align: left; font-size: small}
+div.quote {font-style: italic; font-size: small; color:#6666ff; text-align: center}
+ 
+/* Styles for the nine main map pages */
+table.map {border: 2px dotted #333300; border-collapse: collapse}
+table.map td{border: 1px solid #363948; background-color: #eeeeee; text-align: center}
+table.starbox {border: 1px solid #999999; background-color: #f5f5f5; margin-top: 1em; margin-bottom: 1em}
+table.starbox td{padding: 0; text-align: left}
+table.starbox span{border-bottom: 1px dashed #333333; cursor: help}
+div.captionbox {border: 2px solid #009966; background-color: #eeffee; margin-right: 3%; margin-left: 3%; padding: 0.5em; color: #333399}
+div.captionbox {border-radius: 20px; -moz-border-radius: 20px}
+div.captionbox h3{border: none; border-bottom: 2px dotted #009966; background-color: transparent; letter-spacing: .2em}
+div.tablebox {margin-right: 12%; margin-left: 12%; margin-bottom: 1em}
+table.othermaps {border: 1px solid #3399cc}
+table.othermaps td{border: 1px solid #3399cc; background-color: #eeffff}
+table.othermaps th{border: 1px solid #3399cc; background-color: #ccffff; letter-spacing: .2em}
+table.othermaps img{border: 0}
+table.otherdata {border: 1px solid #9966cc}
+table.otherdata td{border: 1px solid #9966cc; background-color: #ffeeff}
+table.otherdata th{border: 1px solid #9966cc; background-color: #ffccff; letter-spacing: .2em}
+table.otherdata img{border: 0}
+
+/*  Special font styles  */
+.bold {font-weight: bold}
+.italic {font-style: italic}
+.small {font-size: small}
+
+/*  Special font colours  */
+.white {color:#000000}
+.grey {color:#777777}
+.dgrey {color:#999999}
+.magenta {color:#990099}
+.lred {color:#ff88aa}
+.red {color:#cc0011}
+.medred {color:#990022}
+.darkred {color:#660033}
+.orange {color:#ff6600}
+.lyellow {color:#aa9966}
+.yellow {color:#cc9900}
+.lgreen {color:#00cc00}
+.green {color:#009900}
+.lcyan {color:#449999}
+.cyan {color:#00bbbb}
+.lblue {color:#333399}
+.blue {color:#000099}
+.dblue {color:#000066}

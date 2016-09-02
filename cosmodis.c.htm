@@ -1,0 +1,80 @@
+<html>/*
+ cosmodis - A Cosmological Distances Program - version 1.1
+ by Richard Powell - http://www.atlasoftheuniverse.com/
+ 
+ This is a simple piece of code to provide comoving, angular diameter,
+ luminosity, and light travel distances for any given redshift.  The
+ Hubble constant (H0), Omega_matter (OM) and Omega_lambda (OL) are defined
+ within the body of the program and can be adjusted to your favourite
+ values.
+ 
+ For a summary of the formulae used in this program, see:
+ David Hogg, Distance Measures in Cosmology, (2000), astro-ph/9905116.
+ http://arxiv.org/abs/astro-ph/9905116
+ 
+ The standard command for compiling this program in Linux is:
+   cc cosmodis.c -lm -ocosmodis
+ 
+ This program is in the Public Domain.  There is no copyright.
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+#define c 299792.458
+
+int main()
+{
+  float H0 = 70;                // Hubble constant (km/s/Mpc) - adjust according to taste
+  float OM = 0.27;              // Omega(matter) - adjust according to taste
+  float OL = 0.73;              // Omega(lambda) - adjust according to taste
+  float OR = 0.42/(H0*H0);      // Omega(radiation) - this is the usual textbook value
+  long i;
+  long n=10000;                 // Number of steps in the integral
+  float OK = 1-OM-OR-OL;        // Omega(k) defined as 1-OM-OR-OL
+  float HD = 3.2616*c/H0/1000;  // Hubble distance (billions of light years).  See section 2 of Hogg
+  float z, a, adot;             // Redshift "z", Scale Factor "a", and its derivative "adot"
+  float DC, DCC=0, DT, DTT=0, DA, DL, DM;
+  float age, size;              // The age and size of the universe
+
+  printf("Enter Redshift: ");   // Ask for a redshift z
+  scanf("%f",&z);
+
+  for(i=n; i>=1; i--) {         // This loop is the numerical integration
+    a = (i-0.5)/n;              // Steadily decrease the scale factor
+                                // Comoving formula (See section 4 of Hogg, but I've added a radiation term too):
+    adot = a*sqrt(OM*pow(1/a,3)+OK*pow(1/a,2)+OL+OR*pow(1/a,4));    // Note that "a" is equivalent to 1/(1+z)
+    DCC = DCC + 1/(a*adot)/n;   // Running total of the comoving distance
+    DTT = DTT + 1/adot/n;       // Running total of the light travel time (see section 10 of Hogg)
+    if (a>=1/(1+z)) {           // Collect DC and DT until the correct scale is reached
+      DC = DCC;                 // Comoving distance DC
+      DT = DTT;                 // Light travel time DT
+    }
+  }
+                                // Transverse comoving distance DM from section 5 of Hogg:
+  if (OK>0.0001) DM=(1/sqrt(OK))*sinh(sqrt(OK)*DC);
+  else if (OK<-0.0001) DM=(1/sqrt(fabs(OK)))*sin(sqrt(fabs(OK))*DC);
+  else DM=DC;
+
+  age = HD*DTT;                 // Age of the universe (billions of years)
+  size = HD*DCC;                // Comoving radius of the observable universe
+
+  DC = HD*DC;                   // Comoving distance
+  DA = HD*DM/(1+z);             // Angular diameter distance (section 6 of Hogg)
+  DL = HD*DM*(1+z);             // Luminosity distance (section 7 of Hogg)
+  DT = HD*DT;                   // Light travel distance
+
+  printf("-------------------------------------------------------------------\n");
+  printf("For Redshift %.3f, (Ho=%.1fkm/s/Mpc, Omega_M=%.2f, Omega_L=%.2f):\n",z,H0,OM,OL);
+  printf("-------------------------------------------------------------------\n");
+  printf("* Age of the universe now               = %.3f Gyr\n",age);
+  printf("* Age of the universe then              = %.6f Gyr\n",age-DT);
+  printf("* Comoving horizon of the universe now  = %.3f Gyr\n",size);
+  printf("* Comoving horizon of the universe then = %.3f Gyr\n",size/(1+z));
+  printf("* Comoving distance of the source now   = %.3f Gly\n",DC);
+  printf("* Comoving distance of the source then  = %.3f Gly\n",DC/(1+z));  // In a flat universe, this is equal to DA
+  printf("* Angular Diameter distance             = %.3f Gly\n",DA);
+  printf("* Luminosity distance                   = %.3f Gly\n",DL);
+  printf("* Light Travel Time Distance            = %.3f Gly\n",DT);
+  printf("-------------------------------------------------------------------\n");
+}
