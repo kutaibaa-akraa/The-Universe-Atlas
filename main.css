@@ -6,6 +6,19 @@ pre {font-family: monospace; color: #eeffff}
 pre span {font-family: monospace}
 pre a {font-family: monospace}
 a {font-family: Arial, Helvetica, sans-serif; text-decoration: underline}
+#main {
+   margin-left: auto;
+   margin-right: auto;
+   width: 720px;
+   padding-top: 4px;
+   padding-left: 12px;
+   border-left-style: solid;
+   border-right-style: solid;
+   border-top-style: none;
+   border-bottom-style: none;
+   border-color: #444;
+   border-width: 1px;
+}
 a:link {color: #00ffff}
 a:visited {color: #cc0000}
 a:focus,a:hover {color: #cc33cc}
@@ -24,7 +37,8 @@ td,th {vertical-align: middle}
 .left {text-align: left}
 .right {text-align: right}
 .center {text-align: center}
-.center table {margin-left: auto; margin-right: auto; text-align: right}
+.center table {margin-left: auto; margin-right: auto; text-align: left}
+.center-ar table {margin-left: auto; margin-right: auto; text-align: right}
 .center th {text-align: center}
 .floatleft {float: left; margin: 3%}
 .floatright {float: right; margin: 3%}
@@ -34,6 +48,7 @@ td,th {vertical-align: middle}
 hr.base {color: #0000ff; background-color: #0000ff; border: none; height: 2px; margin: 0.2em}
 div.base {border: 1px solid #569; background-color: #000a3f; padding: 0.4em; margin: 1em 0.2em 0.5em 0.2em}
 div.caption {margin-right: 10%; margin-left: 10%; text-align: justify; margin-bottom: 1em}
+div.caption-ar { margin-right: 10%; margin-left: 10%; text-align: right; margin-bottom: 1em }
 div.textbox {background-color: #000033; border: 1px solid #6666ff; padding: 0.5em}
 div.smalltextbox {background-color: #000033; border: 2px solid #3366cc; margin-right: 5%; margin-left: 5%; padding: 0.5em}
 table.listbox {background-color: #00003c; border: 1px solid #4477cc}
