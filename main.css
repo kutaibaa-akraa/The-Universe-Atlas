@@ -84,17 +84,16 @@ table.starbox td{padding: 0; text-align: right}
 table.starbox span{border-bottom: 1px dashed #bbbbbb; cursor: help}
 div.captionbox {border: 2px solid #006633; background-color: #000000; margin-right: 3%; margin-left: 3%; padding: 0.5em; color: #ccddff}
 div.captionbox {border-radius: 20px; -moz-border-radius: 20px}
-div.captionbox h3{border: none; border-bottom: 2px dotted #006633; background-color: transparent; letter-spacing: .2em}
+div.captionbox h3{border: none; border-bottom: 2px dotted #006633; background-color: transparent}
 div.tablebox {margin-right: 12%; margin-left: 12%; margin-bottom: 1em}
 table.othermaps {border: 1px solid #3399cc}
 table.othermaps td{border: 1px solid #3399cc; background-color: #001818}
-table.othermaps th{border: 1px solid #3399cc; background-color: #003333; letter-spacing: .2em}
+table.othermaps th{border: 1px solid #3399cc; background-color: #003333}
 table.othermaps img{border: 0}
 table.otherdata {border: 1px solid #9966cc}
 table.otherdata td{border: 1px solid #9966cc; background-color: #180018}
-table.otherdata th{border: 1px solid #9966cc; background-color: #330033; letter-spacing: .2em}
+table.otherdata th{border: 1px solid #9966cc; background-color: #330033}
 table.otherdata img{border: 0}
-
 /*  Special font styles  */
 .bold {font-weight: bold}
 .italic {font-style: italic}
