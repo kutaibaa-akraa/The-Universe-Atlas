@@ -64,16 +64,15 @@
  </td></tr>
 </table>
 
-
 <hr />
 <div class="center"><span class="small">قام بإنشاء هذا الموقع  <a href="me.html">Richard Powell</a>.
 التحديث الأخير للموقع: 30 تموز-يوليو 2006<br>
 
+<div class="small">
 	قام بترجمة الموقع إلى اللغة العربية :   <a href="metoo.html
 ">قتيبة أقرع</span></div>
 <div class="center"><span class="small"><a href="changes.html">مواضيع جديدة و تغييرات</a></span></div>
 <hr />
-
 
 <table class="subtable">
 <tr><td rowspan="2"><a href="glossary.html"><img src="icons2/glossary.gif" width="100" height="80" alt="Glossary" /></a></td>
