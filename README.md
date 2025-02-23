@@ -24,7 +24,7 @@
     <th><a href="5000lys.html">5000 سنة ضوئية بعيدا عن الشمس</a></th></tr>
 <tr><td><div>ذراع الجبار في المجرة</div>تقبع الشمس و النجوم المجاورة لها ضمن الذراع المحلي ذراع الجبار. تظهر هذه الصورة ملايين النجوم المنتشرة على امتداد هذا الذراع حول الغيوم البينجمية الغازية.
     </td></tr>
-<style type="text/css">#y{position:absolute; display:block; margin:-50px 0 0 -350px; font-size:50%; width:60px}</style>
+
 <tr><td colspan="2" class="center"><img src="icons2/arrows10.gif" width="200" height="35" alt="To the Milky Way Galaxy" /></td></tr>
 <tr><td rowspan="2"><a href="galaxy.html"><img src="icons2/s_galaxy.gif" width="128" height="96" alt="The Milky Way Galaxy" /></a></td>
     <th><a href="galaxy.html">50,000 سنة ضوئية بعيدا عن الشمس</a></th></tr>
@@ -63,19 +63,18 @@
 <tr><td><div>حدود الكون المرئي</div>على الرغم من أن معرفتنا محدودة عن الكون على مقياس البنية الهائلة للكون و بعيدة عن الكمال. فإن العديد من المظاهر  الصغيرة و الكبيرة على أطراف الكون المرئي واضحة للعيان. فإن الكون متناسق بقدر كافي كما هو موضح في هذا المخطط.
  </td></tr>
 </table>
-</div>
+
 
 <hr />
 <div class="center"><span class="small">قام بإنشاء هذا الموقع  <a href="me.html">Richard Powell</a>.
 التحديث الأخير للموقع: 30 تموز-يوليو 2006<br>
 
-<div class="small">
 	قام بترجمة الموقع إلى اللغة العربية :   <a href="metoo.html
 ">قتيبة أقرع</span></div>
 <div class="center"><span class="small"><a href="changes.html">مواضيع جديدة و تغييرات</a></span></div>
 <hr />
 
-<div class="subtable">
+
 <table class="subtable">
 <tr><td rowspan="2"><a href="glossary.html"><img src="icons2/glossary.gif" width="100" height="80" alt="Glossary" /></a></td>
     <th><a href="glossary.html">مصطلحات</a></th></tr>
