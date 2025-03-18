@@ -1,6 +1,6 @@
 /* An Atlas of the Universe - my style sheet! */
 
-body {background-color: #000018; background-image: url("stars.gif"/*tpa=http://www.atlasoftheuniverse.com/stars.gif*/)}
+body {background-color: #000018; background-image: url("stars.gif")}
 body,div,p,td,th,dl,ul {font-family: Arial, Helvetica, sans-serif; color: #eef5ff}
 pre {font-family: monospace; color: #eeffff}
 pre span {font-family: monospace}
@@ -29,7 +29,7 @@ h1 {font-size:200%}
 h2 {font-size:170%}
 h3 {font-size:125%}
 hr {color: #3366cc; background-color: #3366cc; border: none; height: 2px}
-ul {list-style-image: url("icons2/star.gif"/*tpa=http://www.atlasoftheuniverse.com/icons2/star.gif*/)}
+ul {list-style-image: url("icons2/star.gif")}
 p {margin-left: 3%; margin-right: 2%}
 dl {margin-left: 2%; margin-right: 3%}
 td,th {vertical-align: middle}

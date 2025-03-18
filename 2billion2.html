@@ -8,12 +8,33 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="main.css" type="text/css" title="Dark" />
 <link rel="alternate stylesheet" href="light.css" type="text/css" title="Light" />
+<link href="pinchzoomer/css/prettify.min.css" type="text/css" rel="stylesheet" />
+<link href="pinchzoomer/css/bootstrap.min.css" rel="stylesheet">
+<link href="pinchzoomer/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="pinchzoomer/css/text.min.css" rel="stylesheet">
+<link href="pinchzoomer/css/pinchzoomer.min.css" rel="stylesheet">
+<link href="pinchzoomer/css/main.min.css" rel="stylesheet">
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+<![endif]-->
+<script src="pinchzoomer/js/prettify.js" type="text/javascript" ></script>
+<script src="pinchzoomer/js/modernizr.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/jquery-1.10.0.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/jquery.hammer.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/TweenMax.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/plugins/ScrollToPlugin.min.js" type="text/javascript"></script>
+<script src="pinchzoomer/js/main.min.js" type="text/javascript"></script>
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body background="stars.gif" text="#ffffff" bgcolor="#000000" link="#00ffff" vlink="#cc0000">
 <hr class="base" />
 <h1>The Universe within 2 billion Light Years</h1>
-  <a href="2billion2.html" > نسخة تجريبية لمكتبة زووم للصور لنفس الصفحة</a>
-
 <p>
 This is a map of all the major known superclusters within two billion light
 years plotted onto the supergalactic plane.  Each point on this map is a rich
@@ -27,8 +48,25 @@ study galaxies that are far away from this plane where there is a lot less gas
 and dust obscuring our view of the universe.  This explains why most of the
 known superclusters are on the left and right sides of the map.
 </p>
+ 
+<div class="container  divPad">
+    <div class="row-fluid divPad text-center">
+        <div class="page-header">
+            <h3><span class="pinchColor">PINCH</span><span class="zoomColor">ZOOM</span><span class="erColor">er</span> is an easy to setup jQuery plugin for mobile and desktop that adds <em>pinch to zoom</em> / <em>mouse scroll zoom</em> function to your images.</h3>
+        </div>
+        <div id="responsive_example" class="imageHolder text-left"> <img id="img1" src="2billion.gif" data-elem="pinchzoomer" alt="chairs"/> </div>
+    </div>
+
+            <div class="span2 text-center footerLink"><a href="links.html">LINKS</a></div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12 text-center footerCopyright">Copyright © 2013. All Rights Reserved. Ron Feliciano</div>
+        </div>
+   
+
+
 <div class="center">
-<img src="2billion.gif" width="1024" height="768" alt="Superclusters in the known universe" />
+<img src="" width="1024" height="768" alt="Superclusters in the known universe" />
 </div>
 <p>The labels on this map refer to the constellations in which the majority of
 the supercluster is found, this may be different from the supercluster's usual
@@ -197,7 +235,7 @@ clusters of Abell clusters published.  A recent example is
 <a href="javascript:if(confirm('http://arxiv.org/abs/astro-ph/0012536  \n\nسيتم تحويلك إلى صفحة خارجية .  \n\nهل تريد مغادرة هذه الصفحة ؟'))window.location='http://arxiv.org/abs/astro-ph/0012536'" tppabs="http://arxiv.org/abs/astro-ph/0012536">this paper</a> (see also
 <a href="javascript:if(confirm('http://www.aai.ee/~maret/SCLVnet.htm  \n\nسيتم تحويلك إلى صفحة خارجية.  \n\nهل تريد مغادرة هذه الصفحة?'))window.location='http://www.aai.ee/~maret/SCLVnet.htm'" tppabs="http://www.aai.ee/~maret/SCLVnet.htm">this link</a>) by Einasto,
 Einasto, Tago, Muller and Andernach.  Note that although these tight
-concentrations of Abell clusters usually correspond to actual superclusters,+
+concentrations of Abell clusters usually correspond to actual superclusters,
 this technique does not show the many walls and sheets of galaxies that link
 the superclusters.</p>
 
@@ -210,7 +248,7 @@ of a very distant supercluster in Bootes nearly 3 billion light years away.
 </div>
 
 <div class="base"><img src="l_hand.gif" tppabs="http://www.atlasoftheuniverse.com/l_hand.gif" width="33" height="14" alt="The known universe" />
-
+  <a href="universe.html" tppabs="http://www.atlasoftheuniverse.com/universe.html"> Back to the Visible Universe page</a>
 </div>
 <hr class="base" />
 </body>
