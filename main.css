@@ -1,3 +1,4 @@
+
 /* An Atlas of the Universe - my style sheet! */
 
 body {background-color: #000018; background-image: url("stars.gif")}
@@ -48,7 +49,7 @@ td,th {vertical-align: middle}
 hr.base {color: #0000ff; background-color: #0000ff; border: none; height: 2px; margin: 0.2em}
 div.base {border: 1px solid #569; background-color: #000a3f; padding: 0.4em; margin: 1em 0.2em 0.5em 0.2em}
 div.caption {margin-right: 10%; margin-left: 10%; text-align: justify; margin-bottom: 1em}
-div.caption-ar { margin-right: 10%; margin-left: 10%; text-align: right; margin-bottom: 1em }
+div.caption-ar { margin-right: 10%; margin-left: 10%; text-align: right; margin-bottom: 0.5em }
 div.textbox {background-color: #000033; border: 1px solid #6666ff; padding: 0.5em}
 div.smalltextbox {background-color: #000033; border: 2px solid #3366cc; margin-right: 5%; margin-left: 5%; padding: 0.5em}
 table.listbox {background-color: #00003c; border: 1px solid #4477cc}
@@ -118,3 +119,31 @@ table.otherdata img{border: 0}
 .lblue {color:#ccddff}
 .blue {color:#7799ff}
 .dblue {color:#6633ff}
+/*  Special table configuerations  */
+  table {
+            
+            margin: 10px 0;
+            max-width:100%;			
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+           	
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+        .references {
+            direction: ltr;
+            text-align: left;
+            margin: 20px 0;
+			font-style: italic;
+        }
+		 pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
