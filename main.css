@@ -147,3 +147,10 @@ table.otherdata img{border: 0}
             padding: 15px;
             border-radius: 5px;
         }
+p {
+	TEXT-JUSTIFY: kashida;
+	 TEXT-INDENT: 28.3pt; 
+	 TEXT-ALIGN: justify; 
+	 TEXT-KASHIDA: 0% ;
+	 align: justify;
+	 }
